@@ -12,7 +12,7 @@ def load_data_from_csv(file_path):
         print("File {} not found".format(file_path))
         return None
     except Exception as e:
-        print("Error while loading CSV File")
+        print("Error while loading CSV File: {}".format(str(e)))
         return None
     
 
