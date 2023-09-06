@@ -21,5 +21,8 @@ jobs:
     - name: Format code
       run: |
         make format
-    
+    - name: Run Python
+      working-directory: pythonproject/src
+      run: |
+        python desc_stat.py
     
