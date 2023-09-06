@@ -1,3 +1,5 @@
-pylint
+ruff
 pytest
 black
+pandas
+nbval

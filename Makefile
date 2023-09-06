@@ -29,9 +29,9 @@ test: install
 format: install
 	$(VENV)/bin/black $(SRC_DIR)
 
-# Lint code with Flake8
+# Lint code with Ruff
 lint: install
-	$(VENV)/bin/pylint $(SRC_DIR)
+	$(VENV)/bin/ruff $(SRC_DIR)
 
 # Clean up generated files and virtual environment
 clean:
