@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def load_data_from_csv(file_path):
     """Load the desired CSV data file for descriptive statistics
     takes a str file path to the CSV file
@@ -9,18 +10,18 @@ def load_data_from_csv(file_path):
         data = pd.read_csv(file_path)
         return data
     except FileNotFoundError:
-        print("File {} not found".format(file_path))
+        print(f"File {file_path} not found")
         return None
-    except Exception as e:
-        print("Error while loading CSV File: {}".format(str(e)))
+    except Exception as error:
+        print(f"Error while loading CSV File: {str(error)}")
         return None
-    
+
 
 def summary_statistics(dataframe):
     """Takes the DataFrame and calls the describe function on it
-    Args: 
+    Args:
         DataFrame
     Returns:
         DataFrame containing summary statistics"""
-    
+
     return dataframe.describe()
