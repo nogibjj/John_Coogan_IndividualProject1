@@ -31,7 +31,7 @@ format: install
 
 # Lint code with Ruff
 lint: install
-	$(VENV)/bin/ruff $(SRC_DIR)
+	$(VENV)/bin/ruff check $(SRC_DIR)
 
 # Clean up generated files and virtual environment
 clean:
