@@ -1,0 +1,1 @@
+Designed to check if my script will recognize that this isnt a csv file
