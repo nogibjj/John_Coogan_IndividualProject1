@@ -22,7 +22,7 @@ install: venv
 	$(VENV)/bin/pip install --upgrade pip -r  $(REQUIREMENTS)
 
 # Run unit tests
-test: install
+test: 
 	$(VENV)/bin/pytest $(TEST_DIR)
 	$(VENV)/bin/pytest --nbval-lax $(SRC_DIR)
 	# nbval doesnt handle a strict test for formatted jupyter outputs well
