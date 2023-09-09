@@ -1,4 +1,4 @@
-name: Test workflow for Python template
+name: Descriptive Statistics Project Push
 on: [push]
 jobs:
   build:
@@ -20,5 +20,6 @@ jobs:
         make test
     - name: Format code
       run: |
-        make format
+        make format 
+        
     
