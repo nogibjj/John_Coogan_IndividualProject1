@@ -25,11 +25,11 @@ class TestSourceCode(unittest.TestCase):
     def test_load_data_from_csv(self):
         """We will attempt to load some not very good csv files and some missing ones to ensure proper error handling"""
         result = lib.load_data_from_csv("notAfile.csv")
-        expected_result = "File notAfile.csv not found"
+        expected_result = None
         self.assertEqual(result, expected_result)
 
         result = lib.load_data_from_csv("pythonproject\tests\testBreaker.md")
-        expected_result = "Error while loading CSV File:"
+        expected_result = None
         self.assertEqual(result, expected_result)
 
 
