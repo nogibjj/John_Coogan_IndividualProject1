@@ -1,4 +1,4 @@
-name: Test workflow for Python template
+name: Descriptive Statistics Project Push
 on: [push]
 jobs:
   build:
