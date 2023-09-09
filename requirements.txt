@@ -1,6 +1,6 @@
 ruff == 0.0.278
 pytest == 7.4.2
 black == 23.7.0
-pandas
+pandas == 2.0.3
 nbval == 0.10.0
 
