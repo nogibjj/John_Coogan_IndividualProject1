@@ -24,6 +24,7 @@ install: venv
 # Run unit tests
 test: install
 	$(VENV)/bin/pytest $(TEST_DIR)
+	$(VENV)/bin/pytest --nbval $(TEST_DIR)
 
 # Format code with Black
 format: install
