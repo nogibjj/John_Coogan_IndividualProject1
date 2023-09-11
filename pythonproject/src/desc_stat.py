@@ -2,7 +2,6 @@
 from pythonproject.src.lib import load_data_from_csv
 from pythonproject.src.lib import summary_statistics
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
