@@ -1,9 +1,8 @@
 """This is a script that will call the descriptive statistics function from lib.py"""
 from pythonproject.src.lib import load_data_from_csv
 from pythonproject.src.lib import summary_statistics
-import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
+
 
 data = load_data_from_csv("https://www.statlearning.com/s/Auto.csv")
 
