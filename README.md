@@ -19,7 +19,7 @@
 * (a test has yet to be implemented)
 
 
-### Below is the output from the script/jupyter notebook:
+### Below is the output from the script/jupyter notebook which gives the count,mean,std,min, quartiles, and max for each variable:
               mpg   cylinders  displacement       weight  acceleration  \
 count  397.000000  397.000000    397.000000   397.000000    397.000000   
 mean    23.515869    5.458438    193.532746  2970.261965     15.555668   
@@ -40,6 +40,7 @@ min     70.000000    1.000000
 75%     79.000000    2.000000  
 max     82.000000    3.000000  
 
+### Below is the result of the visualize function from the script which plots vehicle weight against mpg.
 ![Alt text](image.png)
 
 ### This is the front end of a potential CD pipeline which will quality control continuously developed code into a deployment environment. Future iterations will build on this baseline best practice and scale into projects of higher complexity.
