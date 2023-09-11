@@ -15,10 +15,12 @@ if data is not None:
 
 
 def plot_visualize(dataframe):
+    auto_df = dataframe
     """A test of data visualization for a given data set"""
-    origin_categories = ["American", "European", "Japanese"]
-    data["origin"] = pd.Categorical(data["origin"], origin_categories)
-    sns.lmplot(x="weight", y="mpg", data=data, hue="Origin")
+    weight = auto_df["weight"]
+    mpg = auto_df["mpg"]
+
+    plt.scatter(weight, mpg)
     plt.xlabel("Vehicle Weight")
     plt.ylabel("MPG")
     plt.title("Scatter Plot of Vehicle Weight vs MPG by car origin")
