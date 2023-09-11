@@ -22,17 +22,17 @@ install: venv
 	$(VENV)/bin/pip install --upgrade pip -r  $(REQUIREMENTS)
 
 # Run unit tests
-test: install
+test: 
 	$(VENV)/bin/pytest $(TEST_DIR)
 	$(VENV)/bin/pytest --nbval-lax $(SRC_DIR)
 	# nbval doesnt handle a strict test for formatted jupyter outputs well
 
 # Format code with Black
-format: install
+format:
 	$(VENV)/bin/black $(SRC_DIR)
 
 # Lint code with Ruff
-lint: install
+lint:
 	$(VENV)/bin/ruff check $(SRC_DIR)
 
 # Clean up generated files and virtual environment
