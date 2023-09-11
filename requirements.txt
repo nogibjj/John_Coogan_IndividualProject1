@@ -3,4 +3,6 @@ pytest == 7.4.2
 black == 23.7.0
 pandas == 2.0.3
 nbval == 0.10.0
+matplotlib == 3.7.2
+seaborn == 0.12.2
 

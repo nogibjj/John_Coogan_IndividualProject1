@@ -1,5 +1,6 @@
 """importing pandas package for the describe function"""
 import pandas as pd
+import pandas as pd
 
 
 def load_data_from_csv(file_path):
