@@ -1,4 +1,5 @@
-[![Test workflow for Python template](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml/badge.svg?branch=dev&event=push)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
+[![Descriptive Statistics Project Push](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
+
 
 ## This is a workflow for a python script which performs descriptive statistics on a csv file
 ### This project has the following dependencies:
