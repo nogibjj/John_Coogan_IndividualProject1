@@ -2,7 +2,8 @@
 
 [![Install Dependencies Status](https://img.shields.io/github/workflow/status/johncoogan53/PythonDataScience/main/Install%20dependencies?label=Install%20Dependencies)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
 
-[![Lint with Ruff Status](https://img.shields.io/github/workflow/status/johncoogan53/PythonDataScience/main/Lint%20with%20Ruff?label=Lint%20with%20Ruff)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
+[![Lint Status](https://github.com/johncoogan53/PythonDataScience/workflows/pythonapp.yml/badge.svg?event=workflow_run&name=Lint)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
+
 
 [![Test Status](https://img.shields.io/github/workflow/status/johncoogan53/PythonDataScience/main/Test?label=Test)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
 
