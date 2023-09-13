@@ -10,15 +10,19 @@ jobs:
       with:
         python-version: 3.8
     - name: Install dependencies
+      id: install
       run: |
         make install
     - name: Lint with Ruff
+      id: lint
       run: |
         make lint
     - name: Test
+      id: test
       run: |
         make test
     - name: Format code
+      id: format
       run: |
         make format 
         
