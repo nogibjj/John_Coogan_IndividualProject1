@@ -6,7 +6,8 @@
 
 [![Test Status](https://img.shields.io/github/workflow/status/johncoogan53/PythonDataScience/main/Test?label=Test)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
 
-[![Format Code Status](https://img.shields.io/github/workflow/status/johncoogan53/PythonDataScience/main/Format%20code?label=Format%20code)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
+[![Format Code Status](https://img.shields.io/github/workflow/status/johncoogan53/PythonDataScience/Descriptive%20Statistics%20Project%20Push?label=Format%20code)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
+
 
 
 
