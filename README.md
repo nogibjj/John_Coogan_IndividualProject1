@@ -1,16 +1,10 @@
-[![Descriptive Statistics Project Push](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
+[![Install](https://github.com/johncoogan53/PythonDataScience/actions/workflows/install.yml/badge.svg)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/install.yml)
 
-[![Install Dependencies Status](https://img.shields.io/github/workflow/status/johncoogan53/PythonDataScience/main/Install%20dependencies?label=Install%20Dependencies)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
+[![Lint](https://github.com/johncoogan53/PythonDataScience/actions/workflows/lint.yml/badge.svg)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/lint.yml)
 
-[![Lint Status](https://github.com/johncoogan53/PythonDataScience/workflows/pythonapp.yml/badge.svg?event=workflow_run&name=Lint)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
+[![Format](https://github.com/johncoogan53/PythonDataScience/actions/workflows/format.yml/badge.svg)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/format.yml)
 
-
-[![Test Status](https://img.shields.io/github/workflow/status/johncoogan53/PythonDataScience/main/Test?label=Test)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
-
-[![Format Code Status](https://img.shields.io/github/workflow/status/johncoogan53/PythonDataScience/Descriptive%20Statistics%20Project%20Push?label=Format%20code)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
-
-
-
+[![Test](https://github.com/johncoogan53/PythonDataScience/actions/workflows/test.yml/badge.svg)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/test.yml)
 
 ## This is a workflow for a python script which performs descriptive statistics on a csv file
 ### This project has the following dependencies:
@@ -20,6 +14,8 @@
 * pandas == 2.0.3
 * nbval == 0.10.0
 * matplotlib == 3.7.2
+* jupyter == 1.0.0
+* tabulate == 0.9.0
 
 ### This project uses has functions defined in a lib.py for reading a csv and generating summary statistics (with appropriate error handling) and a script with associated jupyter notebook for visualizing that data.
 
@@ -28,32 +24,24 @@
 * Install the dependencies listed above
 * Lint the pushed code with ruff
 * Format with black
-* (a test has yet to be implemented)
+* Perform a series of tests including verifying csv input and verifying descriptive statistics output
 
 
 ### Below is the output from the script/jupyter notebook which gives the count,mean,std,min, quartiles, and max for each variable:
-              mpg   cylinders  displacement       weight  acceleration  \
-count  397.000000  397.000000    397.000000   397.000000    397.000000   
-mean    23.515869    5.458438    193.532746  2970.261965     15.555668   
-std      7.825804    1.701577    104.379583   847.904119      2.749995   
-min      9.000000    3.000000     68.000000  1613.000000      8.000000   
-25%     17.500000    4.000000    104.000000  2223.000000     13.800000   
-50%     23.000000    4.000000    146.000000  2800.000000     15.500000   
-75%     29.000000    8.000000    262.000000  3609.000000     17.100000   
-max     46.600000    8.000000    455.000000  5140.000000     24.800000   
+|       |      mpg |   cylinders |   displacement |   weight |   acceleration |    year |     origin |
+|:------|---------:|------------:|---------------:|---------:|---------------:|--------:|-----------:|
+| count | 397      |   397       |        397     |  397     |       397      | 397     | 397        |
+| mean  |  23.5159 |     5.45844 |        193.533 | 2970.26  |        15.5557 |  75.995 |   1.57431  |
+| std   |   7.8258 |     1.70158 |        104.38  |  847.904 |         2.75   |   3.69  |   0.802549 |
+| min   |   9      |     3       |         68     | 1613     |         8      |  70     |   1        |
+| 25%   |  17.5    |     4       |        104     | 2223     |        13.8    |  73     |   1        |
+| 50%   |  23      |     4       |        146     | 2800     |        15.5    |  76     |   1        |
+| 75%   |  29      |     8       |        262     | 3609     |        17.1    |  79     |   2        |
+| max   |  46.6    |     8       |        455     | 5140     |        24.8    |  82     |   3        |
 
-             year      origin  
-count  397.000000  397.000000  
-mean    75.994962    1.574307  
-std      3.690005    0.802549  
-min     70.000000    1.000000  
-25%     73.000000    1.000000  
-50%     76.000000    1.000000  
-75%     79.000000    2.000000  
-max     82.000000    3.000000  
 
-### Below is the result of the visualize function from the script which plots vehicle weight against mpg.
-![Alt text](image.png)
+### Below is the result of the visualize function from the script which plots vehicle weight against mpg. These images are saved into a figures directory with the lib defined save_plot() function. 
+![Alt text](pythonproject/figures/scatter_plot_ScatterPlot.png)
 
-### This is the front end of a potential CD pipeline which will quality control continuously developed code into a deployment environment. Future iterations will build on this baseline best practice and scale into projects of higher complexity.
+### This is the front end of a potential CD pipeline which will quality control continuously developed code into a deployment environment. Future iterations will build on this baseline best practice and scale into projects of higher complexity. This structure can be used to rapidly develop and quality control data science projects of much higher complexity.
 
