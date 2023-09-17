@@ -1,4 +1,4 @@
-name: Lint
+name: Install
 on: [push]
 jobs:
   build:
@@ -13,7 +13,3 @@ jobs:
       id: install
       run: |
         make install
-    - name: Lint with Ruff
-      id: lint
-      run: |
-        make lint

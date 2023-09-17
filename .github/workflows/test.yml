@@ -13,7 +13,7 @@ jobs:
       id: install
       run: |
         make install
-    - name: Lint with Ruff
-      id: lint
+    - name: Test
+      id: test
       run: |
-        make lint
+        make test
