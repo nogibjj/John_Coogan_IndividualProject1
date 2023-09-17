@@ -1,6 +1,27 @@
 """importing pandas package for the describe function"""
-import pandas as pd
+import sys
 
+sys.path.append("venv/lib/python3.11/site-packages")
+# ignore lint errors for the following lines
+import pandas as pd # noqa: E402
+import matplotlib.pyplot as plt # noqa: E402
+
+
+def plot_visualize(dataframe):
+    auto_df = dataframe
+    """A test of data visualization for a given data set"""
+    weight = auto_df["weight"]
+    mpg = auto_df["mpg"]
+
+    fig,ax = plt.subplots()
+    scatter = ax.scatter(weight, mpg)
+    ax.set_xlabel("Vehicle Weight")
+    ax.set_ylabel("MPG")
+    ax.set_title("Scatter Plot of Vehicle Weight vs MPG by car origin")
+    return fig
+
+def save_plot(file_name,datafram):
+    plot_visualize(datafram).savefig("pythonproject/figures/" + f"scatter_plot_{file_name}.png")
 
 def load_data_from_csv(file_path):
     """Load the desired CSV data file for descriptive statistics
@@ -24,5 +45,6 @@ def summary_statistics(dataframe):
         DataFrame
     Returns:
         DataFrame containing summary statistics"""
-
-    return dataframe.describe()
+    summary = dataframe.describe()
+    markdown_output = summary.to_markdown()
+    return markdown_output

@@ -26,28 +26,20 @@
 
 
 ### Below is the output from the script/jupyter notebook which gives the count,mean,std,min, quartiles, and max for each variable:
-              mpg   cylinders  displacement       weight  acceleration  \
-count  397.000000  397.000000    397.000000   397.000000    397.000000   
-mean    23.515869    5.458438    193.532746  2970.261965     15.555668   
-std      7.825804    1.701577    104.379583   847.904119      2.749995   
-min      9.000000    3.000000     68.000000  1613.000000      8.000000   
-25%     17.500000    4.000000    104.000000  2223.000000     13.800000   
-50%     23.000000    4.000000    146.000000  2800.000000     15.500000   
-75%     29.000000    8.000000    262.000000  3609.000000     17.100000   
-max     46.600000    8.000000    455.000000  5140.000000     24.800000   
+|       |      mpg |   cylinders |   displacement |   weight |   acceleration |    year |     origin |
+|:------|---------:|------------:|---------------:|---------:|---------------:|--------:|-----------:|
+| count | 397      |   397       |        397     |  397     |       397      | 397     | 397        |
+| mean  |  23.5159 |     5.45844 |        193.533 | 2970.26  |        15.5557 |  75.995 |   1.57431  |
+| std   |   7.8258 |     1.70158 |        104.38  |  847.904 |         2.75   |   3.69  |   0.802549 |
+| min   |   9      |     3       |         68     | 1613     |         8      |  70     |   1        |
+| 25%   |  17.5    |     4       |        104     | 2223     |        13.8    |  73     |   1        |
+| 50%   |  23      |     4       |        146     | 2800     |        15.5    |  76     |   1        |
+| 75%   |  29      |     8       |        262     | 3609     |        17.1    |  79     |   2        |
+| max   |  46.6    |     8       |        455     | 5140     |        24.8    |  82     |   3        |
 
-             year      origin  
-count  397.000000  397.000000  
-mean    75.994962    1.574307  
-std      3.690005    0.802549  
-min     70.000000    1.000000  
-25%     73.000000    1.000000  
-50%     76.000000    1.000000  
-75%     79.000000    2.000000  
-max     82.000000    3.000000  
 
 ### Below is the result of the visualize function from the script which plots vehicle weight against mpg.
-![Alt text](image.png)
+![Alt text](pythonproject/figures/scatter_plot_ScatterPlot.png)
 
 ### This is the front end of a potential CD pipeline which will quality control continuously developed code into a deployment environment. Future iterations will build on this baseline best practice and scale into projects of higher complexity.
 
