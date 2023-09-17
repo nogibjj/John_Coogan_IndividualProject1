@@ -41,6 +41,6 @@
 
 
 ### Below is the result of the visualize function from the script which plots vehicle weight against mpg. These images are saved into a figures directory with the lib defined save_plot() function. 
-![Alt text](pythonproject/figures/scatter_plot_Weight vs MPG.png)
+![Alt text](<pythonproject/figures/scatter_plot_Weight vs MPG.png>)
 ### This is the front end of a potential CD pipeline which will quality control continuously developed code into a deployment environment. Future iterations will build on this baseline best practice and scale into projects of higher complexity. This structure can be used to rapidly develop and quality control data science projects of much higher complexity.
 
