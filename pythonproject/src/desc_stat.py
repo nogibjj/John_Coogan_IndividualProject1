@@ -2,6 +2,12 @@
 import lib
 
 
+def save_auto(fileName, data):
+    lib.plot_visualize(data)
+    lib.save_plot(fileName, data)
+    return None
+
+
 def main():
     """Main function to call data visualization functions"""
     data = lib.load_data_from_csv("https://www.statlearning.com/s/Auto.csv")
@@ -9,10 +15,8 @@ def main():
     if data is not None:
         summary = lib.summary_statistics(data)
 
+    save_auto("Weight vs MPG", data)
     print(summary)
-
-    lib.plot_visualize(data)
-    lib.save_plot("ScatterPlot", data)
 
     # print(lib.df_min(data,"weight"))
     # print(lib.df_max(data,"cylinders"))
