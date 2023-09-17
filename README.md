@@ -5,7 +5,8 @@
 [![Format](https://github.com/johncoogan53/PythonDataScience/actions/workflows/format.yml/badge.svg)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/format.yml)
 
 [![Test](https://github.com/johncoogan53/PythonDataScience/actions/workflows/test.yml/badge.svg)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/test.yml)
-
+## Project Video Link:
+https://youtu.be/9T8cuY6lYWQ
 ## This is a workflow for a python script which performs descriptive statistics on a csv file
 ### This project has the following dependencies:
 * ruff == 0.0.278
