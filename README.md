@@ -1,13 +1,4 @@
-[![Descriptive Statistics Project Push](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
 
-[![Install Dependencies Status](https://img.shields.io/github/workflow/status/johncoogan53/PythonDataScience/main/Install%20dependencies?label=Install%20Dependencies)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
-
-[![Lint Status](https://github.com/johncoogan53/PythonDataScience/workflows/pythonapp.yml/badge.svg?event=workflow_run&name=Lint)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
-
-
-[![Test Status](https://img.shields.io/github/workflow/status/johncoogan53/PythonDataScience/main/Test?label=Test)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
-
-[![Format Code Status](https://img.shields.io/github/workflow/status/johncoogan53/PythonDataScience/Descriptive%20Statistics%20Project%20Push?label=Format%20code)](https://github.com/johncoogan53/PythonDataScience/actions/workflows/pythonapp.yml)
 
 
 
