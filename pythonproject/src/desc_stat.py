@@ -12,7 +12,10 @@ def main():
     print(summary)
 
     lib.plot_visualize(data)
-    lib.save_plot("ScatterPlot",data)
+    lib.save_plot("ScatterPlot", data)
+
+    # print(lib.df_min(data,"weight"))
+    # print(lib.df_max(data,"cylinders"))
 
 
 if __name__ == "__main__":

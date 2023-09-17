@@ -1,21 +1,21 @@
 """Import appropriate modules to select src filepath since it isnt in the test director"""
 import unittest
 import sys
-import os
+#import os
+sys.path.append('pythonproject/src')
+import lib
+import source_code
 
-
-current_dir = os.path.dirname(os.path.abspath(__file__))
-parent_dir = os.path.abspath(os.path.join(current_dir, ".."))
-sys.path.insert(0, parent_dir)
-"""Import files from src we want to test"""
-from src import source_code
-from src import lib
-from src import desc_stat
-
-
+def load_frame():
+    data = lib.load_data_from_csv("https://www.statlearning.com/s/Auto.csv")
+    return data
 
 class TestSourceCode(unittest.TestCase):
     """unit test class which will test source code"""
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.df = load_frame()
+
 
     def test_add(self):
         """Test the add function"""
@@ -32,6 +32,17 @@ class TestSourceCode(unittest.TestCase):
         result = lib.load_data_from_csv("pythonproject\tests\testBreaker.md")
         expected_result = None
         self.assertEqual(result, expected_result)
+    
+    def test_min(self):
+        result = lib.df_min(self.df,"weight")
+        expected_result = 1613
+        self.assertEqual(result,expected_result)
+
+    def test_max(self):
+        result = lib.df_max(self.df,"weight")
+        expected_result = 5140
+        self.assertEqual(result,expected_result)
+
 
 
 if __name__ == "__main__":
