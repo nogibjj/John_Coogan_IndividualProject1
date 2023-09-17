@@ -14,6 +14,8 @@
 * pandas == 2.0.3
 * nbval == 0.10.0
 * matplotlib == 3.7.2
+* jupyter == 1.0.0
+* tabulate == 0.9.0
 
 ### This project uses has functions defined in a lib.py for reading a csv and generating summary statistics (with appropriate error handling) and a script with associated jupyter notebook for visualizing that data.
 
@@ -22,7 +24,7 @@
 * Install the dependencies listed above
 * Lint the pushed code with ruff
 * Format with black
-* (a test has yet to be implemented)
+* Perform a series of tests including verifying csv input and verifying descriptive statistics output
 
 
 ### Below is the output from the script/jupyter notebook which gives the count,mean,std,min, quartiles, and max for each variable:
@@ -38,8 +40,8 @@
 | max   |  46.6    |     8       |        455     | 5140     |        24.8    |  82     |   3        |
 
 
-### Below is the result of the visualize function from the script which plots vehicle weight against mpg.
+### Below is the result of the visualize function from the script which plots vehicle weight against mpg. These images are saved into a figures directory with the lib defined save_plot() function. 
 ![Alt text](pythonproject/figures/scatter_plot_ScatterPlot.png)
 
-### This is the front end of a potential CD pipeline which will quality control continuously developed code into a deployment environment. Future iterations will build on this baseline best practice and scale into projects of higher complexity.
+### This is the front end of a potential CD pipeline which will quality control continuously developed code into a deployment environment. Future iterations will build on this baseline best practice and scale into projects of higher complexity. This structure can be used to rapidly develop and quality control data science projects of much higher complexity.
 
