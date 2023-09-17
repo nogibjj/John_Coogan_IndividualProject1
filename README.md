@@ -27,7 +27,7 @@
 * Perform a series of tests including verifying csv input and verifying descriptive statistics output
 
 
-### Below is the output from the script/jupyter notebook which gives the count,mean,std,min, quartiles, and max for each variable:
+### Below is the output from the script/jupyter notebook which gives the count,mean,std,min, quartiles, and max for each of the variables:
 |       |      mpg |   cylinders |   displacement |   weight |   acceleration |    year |     origin |
 |:------|---------:|------------:|---------------:|---------:|---------------:|--------:|-----------:|
 | count | 397      |   397       |        397     |  397     |       397      | 397     | 397        |
